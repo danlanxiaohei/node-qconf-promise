@@ -45,40 +45,40 @@ var getConf = function (path) {
   return qconf.getConf(path)
 }
 
-var getConf_promise = function (path) {
-  return promiseWay(qconf.getConf, path)
+var getConf_promise = function (path, opt) {
+  return promiseWay(qconf.getConf, path, opt)
 }
 
 var getBatchKeys = function (path) {
   return qconf.getBatchKeys(path)
 }
 
-var getBatchKeys_promise = function (path) {
-  return promiseWay(qconf.getBatchKeys, path)
+var getBatchKeys_promise = function (path, opt) {
+  return promiseWay(qconf.getBatchKeys, path, opt)
 }
 
 var getBatchConf = function (path) {
   return qconf.getBatchConf(path)
 }
 
-var getBatchConf_promise = function (path) {
-  return promiseWay(qconf.getBatchConf, path)
+var getBatchConf_promise = function (path, opt) {
+  return promiseWay(qconf.getBatchConf, path, opt)
 }
 
 var getAllHost = function (path) {
   return qconf.getAllHost(path)
 }
 
-var getAllHost_promise = function (path) {
-  return promiseWay(qconf.getAllHost, path)
+var getAllHost_promise = function (path, opt) {
+  return promiseWay(qconf.getAllHost, path, opt)
 }
 
 var getHost = function (path) {
   return qconf.getHost(path)
 }
 
-var getHost_promise = function (path) {
-  return promiseWay(qconf.getHost, path)
+var getHost_promise = function (path, opt) {
+  return promiseWay(qconf.getHost, path, opt)
 }
 
 module.exports = {
