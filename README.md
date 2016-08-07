@@ -32,6 +32,12 @@ console.log('getBatchConf:', qconf.getBatchConf('/backend/umem/users'))
 console.log('getAllHost:', qconf.getAllHost('/backend/umem/users'))
 console.log('getHost:', qconf.getHost('/backend/umem/users'))
 
+qconf.getAllHost_promise('/path/to/node', {maxRetryTimes: 3}).then(function(value) {
+  console.log('使用promise获取的是 ' + value)
+}, function(err) {
+  console.log('使用promise失败 ' + err)
+})
+
 ```
 
 
