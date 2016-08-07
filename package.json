@@ -1,0 +1,29 @@
+{
+  "name": "node-qconf-promise",
+  "version": "0.1.0",
+  "description": "QConf Node.js Addon",
+  "main": "qconf.js",
+  "dependencies": {
+    "bindings": "~1.2.1",
+    "nan": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danlanxiaohei/node-qconf-promise.git"
+  },
+  "author": "mdemo",
+  "keywords": [
+    "qconf",
+    "node-qconf",
+    "node-qconf-promise"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danlanxiaohei/node-qconf-promise/issues"
+  },
+  "homepage": "https://github.com/danlanxiaohei/node-qconf-promise",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "gypfile": true
+}
