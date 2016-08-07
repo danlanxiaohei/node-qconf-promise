@@ -20,12 +20,14 @@ var promiseWay = function (fn, path, opt) {
         if (count < maxRetryTimes) {
           host = fn(path)
           if (host) {
+            console.log('获取到了 count = ' + count);
             clearInterval(timer)
             resolve(host)
           } else {
             count = count + 1
           }
         } else {
+          console.log('最后也没有获取到')
           clearInterval(timer)
           reject(new Error(404))
         }
