@@ -33,6 +33,7 @@ var promiseWay = function (fn, path, opt) {
         }
       }, retryDelay)
     }
+  })
 }
 
 // module.exports = qconf;
