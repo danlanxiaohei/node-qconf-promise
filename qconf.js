@@ -5,15 +5,18 @@ const defaultRetryTimes = 1 // 默认重试次数
 
 var promiseWay = function (fn, path, opt) {
   return new Promise((resolve, reject) => {
-
+    opt = opt || {}
     let host = fn(path)
     if (host) {
+      console.log('第一次就获取到')
       resolve(host)
     } else {
+      console.log('第一次没有获取到，然后重试')
       const maxRetryTimes = opt.maxRetryTimes || defaultRetryTimes
       let retryDelay = opt.retryDelay || defaultRetryDelay
       let count = 0
       const timer = setInterval(function () {
+        console.log('尝试中 count = ' + count)
         if (count < maxRetryTimes) {
           host = fn(path)
           if (host) {
